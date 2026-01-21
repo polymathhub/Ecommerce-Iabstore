@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="theme-color" content="#FF6B35" /> <!-- Jumia-inspired orange theme color -->
+    
+    <!-- Content Security Policy -->
+<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'wasm-unsafe-eval' 'inline-speculation-rules' https://firestore.googleapis.com https://www.google.com https://www.gstatic.com https://apis.google.com https://www.recaptcha.net https://cdn.harshbanker.com;">
+    
+    <!-- Prerender status detection -->
+    <meta name="prerender-status-code" content="200">
+    
+    <!-- Performance optimization - preconnect to origins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://firestore.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://i.imgur.com/" crossorigin />
+    <link rel="preconnect" href="https://www.google.com" crossorigin />
+    <link rel="preconnect" href="https://www.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://apis.google.com" crossorigin />
+    <link rel="preconnect" href="https://www.recaptcha.net" crossorigin />
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="%PUBLIC_URL%/logo192.png" as="image" />
+    
+    <!-- Bot Detection Script - Moved to external file -->
+    <script src="%PUBLIC_URL%/js/bot-detection.js"></script>
+    
+    <!-- Default Meta Tags (will be replaced by dynamic tags for product pages) -->
+    <meta
+      name="description"
+      content="IABtechstore - Your Premium Online Tech Marketplace. Shop electronics, gadgets, and tech products with secure payment, fast delivery, and seller ratings."
+    />
+    <meta name="author" content="IABtechstore" />
+
+    <!-- OpenGraph Tags - Will be replaced by server-side rendering for bots -->
+    <meta property="og:title" content="IABtechstore - Premium Tech Marketplace" />
+    <meta property="og:description" content="Discover amazing tech products on IABtechstore. Flash sales, trusted sellers, verified reviews, and fast delivery across Nigeria." />
+    <meta property="og:image" content="%PUBLIC_URL%/og-banner.png" />
+    <meta property="og:url" content="https://iabtechstore.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="IABtechstore" />
+    <meta property="og:locale" content="en_NG" />
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="IABtechstore - Tech Products at Great Prices" />
+    <meta name="twitter:description" content="Shop verified tech products with seller ratings, secure payments, and fast delivery on IABtechstore." />
+    <meta name="twitter:image" content="%PUBLIC_URL%/og-banner.png" />
+    
+    <!-- PWA support -->
+    <meta name="application-name" content="IABtechstore" />
+    <meta name="msapplication-TileColor" content="#FF6B35" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="IABtechstore" />
+    <meta name="format-detection" content="telephone=no" />
+    
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/splash.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" crossorigin="use-credentials" />
+    <title>IABtechstore - Premium Tech Marketplace | Electronics, Gadgets & More</title>
+    
+    <!-- Inline critical CSS to avoid render-blocking -->
+    <style>
+      /* Critical CSS for initial render */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: #f9fafb;
+      }
+      #root {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      /* Hide reCAPTCHA badge on mobile */
+      .grecaptcha-badge {
+        visibility: hidden;
+      }
+    </style>
+    
+    <!-- Prerender.io support - Moved to external file -->
+    <script src="%PUBLIC_URL%/js/prerender-support.js"></script>
+  </head>
+  <body>
+    <noscript>Please enable JavaScript to use this website.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
